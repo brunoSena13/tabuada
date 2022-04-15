@@ -82,8 +82,13 @@ div.caixa > button{
     margin: 5px
 }
 
-@media (min-width: 300px ) and (max-width: 450px){
-    main{
-        min-height: 85vh;
-    }
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    min-height: 12vh;
+    font-size: 10pt;
 }
