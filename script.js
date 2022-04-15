@@ -6,7 +6,7 @@ btn.addEventListener('click', () => {
     escrita.innerHTML = "";
     let input = Number(document.querySelector('#numbers').value);
     if(isNaN(input)){
-        alert("Digite algum número");
+        alert("Digite apenas números");
     }else if(input == ""){
         escrita.innerHTML = "";
         alert("Qual é? Do zero é facil, digita outra coisa");
