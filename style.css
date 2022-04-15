@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: slateblue;
+}
+
+div.caixa{
+    width: 100%;
+    max-width: 350px;
+    padding: 15px 2%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.caixa > label{
+    font-size: 22px;
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+div.caixa > input{
+    width: 100%;
+    max-width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    outline: 0;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 5px;
+    color:rgb(80, 80, 80)
+}
+
+div.caixa > input:focus{
+    border: 1px solid slateblue;
+}
+
+div.caixa > input::-webkit-inner-spin-button{
+    display: none;
+}
+
+div.caixa > div.escrita{
+    width: 100%;
+    text-align: center;
+    color: rgb(80, 80, 80);
+    font-size: 16px;
+    line-height: 32px;
+    margin: 15px 0;
+}
+
+div.caixa > button{
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+    background-color: slateblue;
+    color: white;
+    cursor: pointer;
+    margin: 5px
+}
+
+@media (min-width: 300px ) and (max-width: 450px){
+    main{
+        min-height: 85vh;
+    }
+}
